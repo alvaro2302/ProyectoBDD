@@ -1,0 +1,28 @@
+<style>
+.main{
+    background-color: #65bdaa ;
+    height: 710px;
+    text-align: center;
+}
+
+.font{
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-size: 20pt;
+    color: #29443e;
+}
+.tittle {
+    font-family:Bradley Hand, cursive;
+    font-size: 60pt;
+    color: #1a3c35;
+}
+</style>
+
+<div class="main">
+  <center><label class="tittle">Juego Terminado</label></center>
+  <br><br><br><br>
+  <center><% for i in 1..@numerodeJugadores %>
+    <label class="font">puntaje de <%= @game.obtenerJugador(i).nombre()%>:  <%= @game.obtenerJugador(i).puntos()%></label>
+    <br><br>
+  <%end%>
+  <br><br></center>
+</div> 

@@ -1,0 +1,50 @@
+<style>
+.main {
+  background-color: #07beb8  ;
+  height: 710px;
+}
+
+.tittle{
+    font-family:Bradley Hand, cursive;
+    font-size: 60pt;
+    color:  #047471;
+    margin-left:20%;
+}
+
+.boton-jugador {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    background-color: #9b09ef;
+    border-radius: 6px;
+    border: 2px solid #06a6a0;
+    margin-left: 1px;
+}
+
+.juego{
+    font-family:Verdana, sans-serif;
+    font-size: 20pt;
+    color: #20553d ;
+}
+
+</style>
+
+<div class="main">
+    <br><br>
+    <label class="tittle">CANTIDAD JUGADORES</label>
+    <br><br><br><br><br><br>
+    <form method="post" action="/redirecionCantidad">    
+        <center> <label class="juego"> </label>
+        <label class="juego">Jugadores </label>
+        <input class="boton-jugador" type='submit' name='selection' value='2'>
+        <br><br>
+        <label class="juego">Jugadores </label>
+        <input class="boton-jugador" type='submit' name='selection' value='3'>
+        <br><br>
+        <label class="juego">Jugadores </label>
+        <input class="boton-jugador" type='submit' name='selection' value='4'></center>
+        <br><br><br><br>
+    </form>
+</div>

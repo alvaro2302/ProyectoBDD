@@ -1,0 +1,48 @@
+<style>
+.main{
+    background-color: #89ccbe ;
+    height: 710px;
+    text-align: center;
+}
+
+.font{
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-size: 65pt;
+    color: #29443e;
+}
+
+.jugador{
+    font-family:Verdana, sans-serif;
+    font-size: 25pt;
+    color: #20553d ;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color:  #17c677  ;
+    border-radius: 6px;
+    border: 2px solid  #185237;
+}
+</style>
+
+<div class="main">
+    <br><br>
+    <label class="font">JUGADORES</label>
+    <br><br><br><br><br><br>
+    <form method="get" action="/mostrarTablaVaciaThree">
+        <label class="jugador">Jugador 1:</label>
+        <input type='text' name='first_user_name' id='first_user_name'>
+        <br><br>
+        <label class="jugador">Jugador 2:</label>
+        <input type='text' name='second_user_name' id='second_user_name'>
+        <br><br>
+        <label class="jugador">Jugador 3:</label>
+        <input type='text' name='three_user_name' id='three_user_name'>
+        <br><br><br><br><br>
+        <input  class="boton" type='submit' value='Iniciar Partida'>
+    </form>
+</div>
