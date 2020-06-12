@@ -1,5 +1,0 @@
-class Tablero
-	def puntaje
-		"0 - 0"
-	end
-end
