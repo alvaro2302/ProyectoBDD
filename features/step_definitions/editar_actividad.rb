@@ -57,3 +57,7 @@ end
 Then("should show activity table") do
     pending # Write code here that turns the phrase above into concrete actions
 end
+
+When("change the date {int}{int}{int} in the first activity") do |int, int2, int3|
+    pending # Write code here that turns the phrase above into concrete actions
+  end
