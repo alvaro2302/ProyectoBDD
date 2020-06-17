@@ -5,6 +5,6 @@
 Scenario: View a list of activites
     Given "Director" is already logged in.
     And located in main page
-    And "Reporte" tab is clicked
+    when "Reporte" tab is clicked
     And "Reporte de trabajo Word" option is clicked
     Then a download window should pop up.

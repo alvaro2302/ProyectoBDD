@@ -5,7 +5,6 @@ View a list of activities for Docente de Tiempo Completo
    so I can know and edit Activities set for a given year
 Scenario: View a list of activites
     Given "Docente de Tiempo Completo" is already logged in.
-    And selected "Ingenieria Civil"
+    When "Ingenieria Civil" is selected
     And "2020" is the year selected
-    When these fields are set 
-    Then Docente Tiempo Completo should see a raw of the activities for the year.
+    Then Docente Tiempo Completo should see a row of the activities for the year.
