@@ -9,3 +9,5 @@ Scenario: configure the profile enter the number of days greater than 30
     And entered the field "contraseña" and "confirmar contraseña" to "foobar"
     And Click on the button "Guardar Cambios"
     Then should show me a message "El valor debe ser menor o igual a 30"
+
+Probar que los cambios sean permanentes

@@ -92,7 +92,7 @@ Feature: Edit Activity
 
 
     Scenario Outline: verificar que al editar la actividad ingrese el progreso a 0
-        Given entered with a director account
+        Given entered with a director account    And tengo precargado el pdf
         When I click on the button "Gestion de Indicadores"
         And select career to  "carrera de ingenieria de Sistemas"
         And select year to "2020"
@@ -101,12 +101,12 @@ Feature: Edit Activity
         And enter the value <progressNumber> in the "progress" field
         And click on "Guardar cambios"
         Then should show activity table
-    Examples:
+    Examples:               Activity status message 
     | progressNumber      | 
     |  0                  |
     |  99                 |
-    |  100                |
-    |  101                |
+    |  100                | completada
+    |  101                | fuera de limites permitidos
     |  1                  |
     |  2                  |
     |  -1                 |
