@@ -5,7 +5,7 @@ Feature: Edit Activity
     For change the activity date
 
     Scenario Outline: edit the date of an activity to the start date
-        Given entered with a director account
+        Given I am on the PEI Online homepage and login
         When upload document "IndicadorUno.pdf"
         And change the date <dateActivity> in the first activity
         And click on  "Gestion de indicadores"
@@ -16,7 +16,7 @@ Feature: Edit Activity
         And add date  "27-01-2020"
         And click on  "Cuardar cambios"
         
-        Then should show the date "27-01-2020" in the first activity
+        Then should show the date <dateActivity> in the first activity
 
     Examples:
     |  dateActivity        | 
