@@ -1,4 +1,4 @@
-Feature: Test Login
+Feature: Test Login User DTC and Director
 	As a User
 	I want to login 
 	So I can enter my account
