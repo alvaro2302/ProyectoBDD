@@ -20,6 +20,7 @@ When("upload document {string}") do |string|
 end
 
 Then("should show a message {string}") do |string|
-    expect(page).to have_selector(:id, 'notice_wrapper', text: 'No esta permitido ingresar Formulario de otra carrera!!!')
+    expect(page).to have_selector(:id, 'notice_wrapper', text: string)
+    click_on('Cerrar Sesión')
 end
 
