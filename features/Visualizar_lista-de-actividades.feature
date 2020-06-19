@@ -1,4 +1,4 @@
-View a list of activities for Docente de Tiempo Completo
+Feature:View a list of activities for Docente de Tiempo Completo
    
    As a Docente de Tiempo Completo
    I want to view my list of indicadores de carrera  given in a year
