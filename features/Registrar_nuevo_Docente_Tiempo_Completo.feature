@@ -1,5 +1,4 @@
-Register a new Docente de Tiempo Completo
-   
+Feature: Register a new Docente de Tiempo Completo
    As a Director
    I want to register a new Docente Tiempo Completo
    so I can add Docentes Tiempo Completo to the system.
