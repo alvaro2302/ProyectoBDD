@@ -1,4 +1,4 @@
-Feature:View a list of activities set for a year
+Feature: View a list of activities set for a year
    
    As a Director
    I want to view my indicadores de carrera given in a year
