@@ -3,7 +3,7 @@ Feature: Register a new Docente de Tiempo Completo
    I want to register a new Docente Tiempo Completo
    so I can add Docentes Tiempo Completo to the system.
 Scenario: Add a new Docente Tiempo Completo
-    Given Director is already logged in.
+    Given I am on the PEI Online homepage and login
     And clicked in "Registrar Nuevo DTC" button
     When Nombre y Apellido are filled in
     And e-mail is filled in 
