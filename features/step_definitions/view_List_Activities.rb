@@ -24,5 +24,6 @@ Then("I should see my Activities table:") do |table|
           colummn = colummn+1 
         end
         rowUnioque= rowUnioque+1
-      end
+    end
+    click_on ('Cerrar Sesión')
 end
