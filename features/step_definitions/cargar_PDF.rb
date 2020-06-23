@@ -11,7 +11,8 @@ end
 When("upload document {string}") do |string|
     click_on('Cargar PDF')
     click_on('Cargar nuevo PDF')
-    page.attach_file('/Users/alvarocuiza/Downloads/'+ string) do
+    pathFolder = File.dirname(__FILE__)
+    page.attach_file( pathFolder + "/"+ string) do
         page.find('#upload_file').click
         
     end
