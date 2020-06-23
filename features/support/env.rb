@@ -10,6 +10,9 @@ begin require 'rspec/expectations'; rescue LoadError; require 'spec/expectations
 
   ENV['USERDTC']="alejandro@gmail.com"
   ENV['PSWDTC']="alejandro"
+
+  ENV['NEWDTC']="canedo@gmail.com"
+  ENV['NEWPSWDTC']="canedo"
   
   
   Capybara.default_driver = :selenium
