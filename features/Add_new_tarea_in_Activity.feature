@@ -7,12 +7,12 @@ Background:
     Given I am on the PEI Online homepage and login
 
 Scenario: Add a new Tarea into Actividad
-   Given Director is already logged in.
-   When in "Gestion de Indicadores"
-   And selected "Activity" desired
-   And clicked in my "Lista de tareas"
-   And clicked in my "Registrar nueva Tarea"
-   And filled "Names" and "Description"
-   And clicked in "Guardar Cambios "
-   Then I should see the new "tarea"
+   Given I am on the activity table
+   When I add the task "review documents" with description "give the final touches"
+   And I add the task "print jobs" with description "present the final results"
+   Then I should see the  table:
+   | Nombre              | Descripción                |
+   | print jobs          | present the final results  |
+   | review documents    | give the final touches     |
+
    
