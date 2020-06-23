@@ -8,11 +8,12 @@ Background:
     Given I am on the PEI Online homepage and login
 
 Scenario: Edit Docente Tiempo Completo
-    And I click "Editar Usuario" button from a Docente Tiempo Completo
+
+    Given I am create user DTC
+    When I click on Edit button from a Docente Tiempo Completo
     And I Enter the required fields as shown below
-    |name:  |Manuel Perez|
-    |email: |nuevodirector@mail.com|
-    |career:  |Manuel Perez|
     And password and password confirmation are filled in
-    And "Guardar Cambios" button is clicked
-    Then I should see a I should see a row with Director Tiempo Completo's data updated in it.
+    And Save changes 
+    Then should the changes in the following table:
+    | Nombre           | Email                 | Carrera                     |
+    | carlos gutierrez | canedo123@gmail.com   | Ingeniería de Sistemas      |
