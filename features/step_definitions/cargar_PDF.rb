@@ -11,11 +11,17 @@ end
 When("upload document {string}") do |string|
     click_on('Cargar PDF')
     click_on('Cargar nuevo PDF')
-    pathFolder = File.dirname(__FILE__)
-    page.attach_file( pathFolder + "/"+ string) do
-        page.find('#upload_file').click
-        
-    end
+    
+    filename = '/features/documents/' + string
+
+   
+
+    file = File.join(Dir.pwd, filename)
+    file = file.tr('/', '\\')
+    find('input#upload_file', :visible => false).send_keys file
+
+
+
     xpath_button = '/html/body/strong/div/center/form/div[2]/div[1]/input'
     find(:xpath, xpath_button).click
 end
