@@ -11,8 +11,6 @@ Scenario: Add a new Docente Tiempo Completo
     When I enter the required fields
    # And send my registration form
     Then I should see a row with new Director Tiempo Completo's data like the table:
-    | Nombre                    | Email                         |
-    | Pedro Fernandez           | antonio.jasa@outlook.com      |
-    | Julio Gomez               | jasa.net15@gmail.com          |
-    | docente3                  | docente3@mail.com             |
-    | alejandro                 | alejandro@gmail.com           |
+    | Nombre                    | Email                         | Carrera                   |
+    | Maria Bermudez            | maria@mail.com                | Ingeniería de Sistemas    |
+
