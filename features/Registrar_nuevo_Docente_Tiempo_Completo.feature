@@ -7,7 +7,9 @@ Scenario: Add a new Docente Tiempo Completo
     And clicked in "Registrar Nuevo DTC" button
     When Nombre y Apellido are filled in
     And e-mail is filled in 
-    And "Ingenieria Civil" is selected
     And password and password confirmation are filled in
+    And "Ingeniería de Sistemas" is selected
     And "Crear cuenta" button is clicked
-    Then I should see a row with new Director Tiempo Completo's data in it.
+    Then I should see a row with new Director Tiempo Completo's data in table:
+   | Nombre           | Email              | Carrera                     |
+   | carlos canedo    | canedo@gmail.com   | Ingeniería de Sistemas      |

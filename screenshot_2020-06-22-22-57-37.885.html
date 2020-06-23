@@ -1,0 +1,195 @@
+<html><head>
+    <title>Edit user | PEI</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="A7VRfAeCbGbMO19IucYLeZMn7CBwO5okWVFcAV2CVd8GM3ADzMypzWExyyZ/BCitdIB293n7/Dq89P30CxhpXg==">
+    
+
+    <link rel="stylesheet" media="all" href="/assets/application-ce8ca8487799c62ba521b14a42be311e2fc70959049f1f67b548bdcbd257466a.css" data-turbolinks-track="reload">
+    <script src="/assets/application-93f20264f04c63d2d3c6eac6034b4e9f2402c5244d89266d989a8eb4b550ea69.js" data-turbolinks-track="reload"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/UCB-cef449823c95033c42a20b57241bb48912dbfee6eca66ef9367f337a0eefe174.png">
+    
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+  </script>
+<![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">UCB PEI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <ul class="nav justify-content-end">
+
+
+
+    <li class="nav-item"><a href="/mail">Notificar por email</a></li>
+    <li class="nav-item"><a href="/uploads">Cargar PDF</a></li>
+    <li class="nav-item"><a href="/users">DTCs</a></li>
+    <li class="nav-item"><a href="/indicators">Gestión de Indicadores</a></li>
+    <li class="nav-item"><a href="/dtc_career/tracing">Control y Seguimiento</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Reportes
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/download">Plan de trabajo Word</a>
+        <a class="dropdown-item" href="/date_indicator/indicatorByDate">Actividades por fechas</a>
+      </div>
+    </li>
+
+
+
+    <li><a href="/users/2/edituser">Configurar Perfil</a></li>
+    <li><a rel="nofollow" data-method="delete" href="/logout">Cerrar Sesión</a></li>
+
+  </ul>
+
+  </div>
+</nav>
+
+
+<p class="text-right">
+<strong>Bienvenido director1@gmail.com<!--<strong-->
+</strong></p><strong>
+
+    <div class="container">
+      <div id="notice_wrapper" style="display: none;">
+      </div>
+      
+<center>
+<h3>Actualizar Datos del Usuario</h3><br>
+<form class="edit_user" id="edit_user_26" action="/users/26" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="A7VRfAeCbGbMO19IucYLeZMn7CBwO5okWVFcAV2CVd8GM3ADzMypzWExyyZ/BCitdIB293n7/Dq89P30CxhpXg==">
+
+  <h4 class="text-success">Deshabilitar <input name="user[deactivated]" type="hidden" value="0"><input type="checkbox" value="1" name="user[deactivated]" id="user_deactivated"></h4>
+
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-2">
+
+  <div class="control-group">
+    <h4 class="text-success">Nombre y apellido(*)</h4>
+      <div class="controls">
+        <input class="form-control form-control-lg" maxlength="50" placeholder="Ingrese nombre completo porfavor" size="50" type="text" value="carlos canedo" name="user[name]" id="user_name">
+        <span class="help-inline">
+      <h4 class="text-danger"></h4></span>
+      </div>
+  </div>
+
+    </div>
+    <div class="col-md-4 mb-2">
+
+  <div class="control-group">
+    <h4 class="text-success">Correo (*)</h4>
+      <div class="controls">
+        <input class="form-control form-control-lg" maxlength="50" placeholder="Ingrese correo porfavor" size="50" type="text" value="canedo@gmail.com" name="user[email]" id="user_email">
+        <span class="help-inline">
+        <h4 class="text-danger"></h4></span>
+      </div>
+  </div>
+
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-2">
+
+
+    </div>
+
+    <div class="col-md-4 mb-2">
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-2">
+
+        <div class="control-group">
+          
+            <h4 class="text-success">Carreras (*)</h4>
+            <input name="careers[ids][]" type="hidden" value=""><select multiple="multiple" name="careers[ids][]" id="careers_ids"><option value="1">Ingeniería de Sistemas</option></select>
+        </div>
+
+    </div>
+
+    <div class="col-md-4 mb-2">
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-2">
+
+  <div class="control-group">
+    <h4 class="text-success">Contraseña (*)</h4>
+      <div class="controls">
+        <input class="form-control form-control-lg" maxlength="50" placeholder="Ingrese contraseña porfavor" size="50" type="password" name="user[password]" id="user_password">
+        <span class="help-inline">
+        <h4 class="text-danger"></h4></span>
+      </div>
+  </div>
+
+    </div>
+    <div class="col-md-4 mb-2">
+
+  <div class="control-group">
+    <h4 class="text-success">Confirmar contraseña (*)</h4>
+      <div class="controls">
+        <input class="form-control form-control-lg" maxlength="50" placeholder="Contraseña para confirmar" size="50" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+        <span class="help-inline">
+        <h4 class="text-danger"></h4></span>
+      </div>
+  </div>
+
+    </div>
+  </div>
+
+<br>
+
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-2">
+    <input type="submit" name="commit" value="Guardar cambios" class="btn btn-primary btn-lg btn-block" data-disable-with="Guardar cambios">
+    </div>
+    <div class="col-md-2 mb-2">
+    <a class="btn btn-primary btn-lg btn-block" href="/users">Volver atrás</a>
+    </div>
+  </div>
+
+</form>
+<script type="text/javascript">
+$('option').mousedown(function(e) {
+    e.preventDefault();
+    var originalScrollTop = $(this).parent().scrollTop();
+    console.log(originalScrollTop);
+    $(this).prop('selected', $(this).prop('selected') ? false : true);
+    var self = this;
+    $(this).parent().focus();
+    setTimeout(function() {
+        $(self).parent().scrollTop(originalScrollTop);
+    }, 0);
+    return false;
+});
+</script>
+
+</center>
+
+      <footer class="footer">
+  <copyright>
+      Proyecto de Grado - Copyright © 2020<br>
+  </copyright>
+  <nav>
+    <ul>Elaborado por:   <a href="https://www.facebook.com/jasa.sabath.9">Juan Sabath</a></ul>
+    <ul>Descargar: <a href="/apk">App</a></ul>
+  </nav>
+</footer>
+
+    </div>
+  
+
+
+<script>
+$(document).ready(function() {
+    $("#notice_wrapper").fadeIn("slow").delay(2000).fadeOut("slow");
+});
+</script>
+</strong></body></html>
