@@ -42,14 +42,12 @@ Then("I should see the  table:") do |table|
     xpathDeletefirstTask = '/html/body/strong/div/div[4]/div/div[1]/div[3]/a'
     find(:xpath, xpathDeletefirstTask).click
     page.accept_alert
-    xpathDeletesecondTask = '/html/body/strong/div/div[4]/div/div/div[3]/a'
-    find(:xpath, xpathDeletesecondTask).click
-    page.accept_alert
-
+    sleep 3
     xpathFinal = '/html/body/strong/div/div[4]/div/div/div[3]/a'
     find(:xpath, xpathFinal).click
     page.accept_alert
     click_on("Cerrar Sesión")
+    
 
 
 end
